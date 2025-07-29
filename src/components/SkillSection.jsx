@@ -19,7 +19,7 @@ const SkillSection = () => {
   const filteredSkills = skillMap[activeTab] || [];
 
   return (
-    <div className="p-6 bg-gray-100 min-h-auto px-30">
+    <div className="p-6 bg-gray-100 min-h-screen  px-30">
       <h2 className="text-4xl font-bold text-gray-800 mb-6">
         Technical Skills
       </h2>

@@ -9,7 +9,7 @@ import ExperienceCard from "./ExperienceCard";
 import EducationCard from "./EducationCard";
 export default function Experience() {
   return (
-    <>
+    <div className="bg-gray-100 min-h-screen">
     <h1 className="text-4xl font-bold text-center p-4">Work Experience</h1>
     <Timeline position="alternate">
       <TimelineItem>
@@ -32,6 +32,6 @@ export default function Experience() {
       </TimelineItem>
      
     </Timeline>
-    </>
+    </div>
   );
 }

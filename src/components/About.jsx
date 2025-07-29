@@ -4,10 +4,10 @@ import download from "../assets/download.png";
 import contact from "../assets/contact.png";
 import Resume_Aarti_Yadav_2025 from "../assets/Resume_Aarti_Yadav_2025.pdf";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { Link } from "react-router-dom";
 const About = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between md:px-25 bg-gradient-to-r from-white to-gray-200">
+    <div className="flex flex-col md:flex-row items-center justify-between md:px-30 bg-gray-100 min-h-screen ">
       <motion.div
         initial={{ opacity: 0.2, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
@@ -34,10 +34,10 @@ const About = () => {
             <img src={download} className="w-4 h-4 mr-2" alt="download img" />
             <span>Download Resume</span>
           </a>
-          <button className="bg-blue-700 hover:bg-blue-600 hover:text-gray-900 text-white py-2 px-4 rounded-lg shadow-md  flex items-center">
+          <Link to="/get-in-touch "className="bg-blue-700 hover:bg-blue-600 hover:text-gray-900 text-white py-2 px-4 rounded-lg shadow-md  flex items-center">
             <img src={contact} className="w-4 h-4 mr-2" alt="contact" />
             <span>Contact Me</span>
-          </button>
+          </Link>
         </div>
       </motion.div>
 
