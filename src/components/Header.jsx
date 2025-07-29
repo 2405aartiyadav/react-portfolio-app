@@ -44,7 +44,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-blue-900 dark:text-white">
+    <header className="bg-blue-500 dark:text-white">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -96,22 +96,13 @@ export default function Header() {
             </button>
           </div>
           <div className="mt-6 flow-root text-2xl">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                {/* {list.map((item, index) => (
-                  <a
-                    key={index}
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2  font-semibold text-gray-500 hover:bg-gray-50"
-                  >
-                    {item}
-                  </a>
-                ))} */}
+            <div className="-my-6 divide-y divide-white">
+              <div className="space-y-2 py-6 cursor-pointer">
                 {navItems.map((item, index) => (
                   <Link
                     key={index}
                     to={item.path}
-                    className="-mx-3 block rounded-lg px-3 py-2  font-semibold text-gray-500 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2  font-semibold text-black-500 hover:bg-blue-500 cursor-pointer"
                   >
                     {item.label}
                   </Link>

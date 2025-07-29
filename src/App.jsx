@@ -12,6 +12,9 @@ function App() {
   return (
      <BrowserRouter>
       <Header />
+      {/* <SkillSection />
+      <Experience />
+      <GetInTouch /> */}
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/skills" element={<SkillSection />} />
