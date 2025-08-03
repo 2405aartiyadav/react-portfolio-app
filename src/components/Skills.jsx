@@ -12,7 +12,7 @@ const Skills = () => {
   return (
     <div className="bg-gradient-to-r from-white to-gray-200  min-h-screen px-4 sm:px-6 py-10 transition-all duration-700 ease-in-out">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-2xl font-bold mb-8">TECHNICAL SKILLS</h2>
+        <h2 className="md:text-2xl sm:text-xl font-bold mb-8">TECHNICAL SKILLS</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12">
           {skills.map((skill, index) => (

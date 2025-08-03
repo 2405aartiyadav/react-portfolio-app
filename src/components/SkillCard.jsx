@@ -40,12 +40,12 @@ const SkillCard = ({ name, icon, percentage, experience, isSimple }) => {
         <>
           <div className="w-full bg-gray-200 h-2 rounded-full mb-2">
             <div
-              className="h-2 bg-blue-500 rounded-full transition-all duration-500 ease-in-out"
+              className="h-2 bg-[#1E3A8A] rounded-full transition-all duration-500 ease-in-out"
               style={{ width: `${percentage}%` }}
             ></div>
           </div>
 
-          <div className="text-xs text-gray-500">{experience}</div>
+          <div className="text-xs text-white-500">{experience}</div>
         </>
       )}
     </div>

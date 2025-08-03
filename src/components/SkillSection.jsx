@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import SkillCard from "./SkillCard";
-import {
-  frontendSkills,
- other
-} from "./skills";
+import { frontendSkills, other } from "./skills";
 import { motion, AnimatePresence } from "framer-motion";
 
 const SkillSection = () => {
@@ -13,14 +10,13 @@ const SkillSection = () => {
   const skillMap = {
     Frontend: frontendSkills,
     Other: other,
-    
   };
 
   const filteredSkills = skillMap[activeTab] || [];
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen  px-30">
-      <h2 className="text-4xl font-bold text-gray-800 mb-6">
+    <div className=" bg-gray-800 px-30">
+      <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r mb-6 from-green-400 to-blue-500">
         Technical Skills
       </h2>
 
@@ -31,8 +27,8 @@ const SkillSection = () => {
             onClick={() => setActiveTab(tab)}
             className={`px-8 py-4 rounded-full text-sm font-medium transition-colors duration-300 ease-in ${
               activeTab === tab
-                ? "bg-blue-600 text-white"
-                : "bg-blue-200 text-gray-700 hover:bg-gray-300"
+                ? "bg-[#2563EB] hover:bg-[#1D4ED8] text-white hover:text-white"
+                : "bg-blue-200 text-white-700 hover:bg-gray-300"
             }`}
           >
             {tab}
@@ -40,7 +36,7 @@ const SkillSection = () => {
         ))}
       </div>
 
-      <h3 className="text-xl font-semibold text-gray-700 mb-4">
+      <h3 className="text-xl font-bold text-white mb-4">
         {activeTab} Skills
       </h3>
 
@@ -57,7 +53,7 @@ const SkillSection = () => {
             <SkillCard
               key={index}
               {...skill}
-              isSimple={activeTab !== "Frontend"} 
+              isSimple={activeTab !== "Frontend"}
             />
           ))}
         </motion.div>
