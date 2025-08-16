@@ -41,7 +41,7 @@ function App() {
           <Route
             index
             element={
-              <div className="bg-gray-200">
+                 <div style={{ backgroundColor: '#FDFCDC', minHeight: '100vh' } } className="ml-20 mr-20 mt-5">
                 <About />
                 <Experience />
                 <Projects/>
@@ -54,7 +54,6 @@ function App() {
           <Route path="experience" element={<Experience />} />
           <Route path="get-in-touch" element={<GetInTouch />} />
           <Route path="projects" element={<Projects />} />
-
           <Route path="*" element={<div>Page Not Found</div>} />
         </Route>
       </Routes>

@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillCard = ({ name, icon, percentage, experience, isSimple }) => {
   return (
-    <div className="bg-white p-4 rounded-xl shadow-md w-full transition-transform hover:scale-[1.02] duration-300 ">
+    <div className="bg-white p-4 rounded-xl shadow-md w-full transition-transform hover:scale-[1.02] duration-300">
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center space-x-2">
          {
@@ -29,7 +29,7 @@ const SkillCard = ({ name, icon, percentage, experience, isSimple }) => {
         </div>
 
         {!isSimple && (
-          <span className="text-blue-600 font-semibold text-sm">
+          <span className="text-[#0081A7] font-semibold text-sm">
             {percentage}%
           </span>
         )}
@@ -40,7 +40,7 @@ const SkillCard = ({ name, icon, percentage, experience, isSimple }) => {
         <>
           <div className="w-full bg-gray-200 h-2 rounded-full mb-2">
             <div
-              className="h-2 bg-[#1E3A8A] rounded-full transition-all duration-500 ease-in-out"
+              className="h-2 bg-[#0081A7] rounded-full transition-all duration-500 ease-in-out"
               style={{ width: `${percentage}%` }}
             ></div>
           </div>

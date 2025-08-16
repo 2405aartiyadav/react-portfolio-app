@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-[#1E3A8A] dark:text-white">
+      <header className="bg-[#0081A7] dark:text-[#FDFCDC]">
         <nav
           aria-label="Global"
           className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -32,7 +32,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <p className="text-white text-2xl font-bold">Aarti Yadav</p>
+              <p className="text-[#FDFCDC] text-2xl font-bold">Aarti Yadav</p>
             </a>
           </div>
 
@@ -41,7 +41,7 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-[#FDFCDC]"
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="size-6" />
@@ -54,7 +54,7 @@ export default function Header() {
               <Link
                 key={index}
                 to={item.path}
-                className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold hover:bg-[#FDFCDC] hover:text-[#0081A7]"
               >
                 {item.label}
               </Link>
@@ -70,12 +70,12 @@ export default function Header() {
           className="lg:hidden"
         >
           <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 text-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#0081A7] text-[#FDFCDC] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
-                className="-m-2.5 rounded-md p-2.5 text-white"
+                className="-m-2.5 rounded-md p-2.5 text-[#FDFCDC]"
               >
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon aria-hidden="true" className="size-6" />
@@ -89,7 +89,7 @@ export default function Header() {
                       key={index}
                       to={item.path}
                       onClick={handleLinkClick}
-                      className="-mx-3 block rounded-lg px-3 py-2 font-semibold text-white hover:bg-gray-700 hover:text-blue-300 transition-colors"
+                      className="-mx-3 block rounded-lg px-3 py-2 font-semibold text-[#FDFCDC] hover:bg-gray-700 hover:text-blue-300 transition-colors"
                     >
                       {item.label}
                     </Link>
@@ -103,7 +103,7 @@ export default function Header() {
 
       {/* This Outlet renders content from the matched route */}
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

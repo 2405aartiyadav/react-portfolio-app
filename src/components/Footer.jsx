@@ -6,7 +6,7 @@ import linkedin from "../assets/linkedin.png";
 
 function Footer() {
   return (
-       <footer className="bg-[#1E3A8A] text-white py-6 mt-8">
+       <footer className="bg-[#0081A7] text-white py-6 mt-8">
         <div className="max-w-7xl mx-auto text-center">
           <p>&copy; 2025 Aarti Yadav. All rights reserved.</p>
           {/* <div className="mt-4">

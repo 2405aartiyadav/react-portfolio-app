@@ -15,8 +15,8 @@ const SkillSection = () => {
   const filteredSkills = skillMap[activeTab] || [];
 
   return (
-    <div className=" bg-gray-800 px-30">
-      <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r mb-6 from-green-400 to-blue-500">
+    <div className="py-16 px-8 ">
+      <h2 className="text-4xl font-extrabold text-[#F07167] bg-clip-text mb-6">
         Technical Skills
       </h2>
 
@@ -27,7 +27,7 @@ const SkillSection = () => {
             onClick={() => setActiveTab(tab)}
             className={`px-8 py-4 rounded-full text-sm font-medium transition-colors duration-300 ease-in ${
               activeTab === tab
-                ? "bg-[#2563EB] hover:bg-[#1D4ED8] text-white hover:text-white"
+                ? "bg-[#0081A7] hover:bg-[#1D4ED8] text-white hover:text-white"
                 : "bg-blue-200 text-white-700 hover:bg-gray-300"
             }`}
           >
@@ -36,7 +36,7 @@ const SkillSection = () => {
         ))}
       </div>
 
-      <h3 className="text-xl font-bold text-white mb-4">
+      <h3 className="text-xl font-bold text-[#F07167] mb-4">
         {activeTab} Skills
       </h3>
 
