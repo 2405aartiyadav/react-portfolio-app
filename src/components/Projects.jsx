@@ -19,11 +19,11 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="bg-gray-800 text-white py-16 px-8">
+    <div className="bg-[#FDFCDC] ml-20 mr-20 py-16 px-8 ">
       {/* Header Section */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-          MY PORTFOLIO WORK
+      <div className="text-center">
+        <h2 className="text-4xl font-extrabold  bg-clip-text text-[#F07167] mb-8">
+          My Portfolio Work
         </h2>
         <p className="text-xl mt-4">
           Here is some of my work that I've done in HTML5, CSS, JS, ReactJS,
@@ -32,25 +32,25 @@ function Projects() {
       </div>
 
       {/* Portfolio Grid Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 bg-[#FDFCDC]" >
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-lg shadow-lg transform transition-transform duration-500 hover:rotate-3 hover:scale-105"
+            className="bg-[#f7f7ca] p-6 rounded-lg shadow-2xl transform transition-transform duration-500 hover:rotate-3 hover:scale-105"
           >
             <img
               src={project.imageUrl}
               alt={project.title}
-              className="w-full h-48 object-cover rounded-md mb-4 transition-transform duration-500 hover:rotate-6"
+              className="w-full h-48 object-cover rounded-md mb-4 transition-transform duration-500 hover:rotate-6 bg-[#f7f7ca] shadow-2xl"
             />
-            <h3 className="text-xl font-semibold">{project.title}</h3>
-            <p className="text-gray-600">{project.description}</p>
+            <h3 className="text-xl font-semibold text-[#F07167]">{project.title}</h3>
+            <p className="text-[#0081A7]">{project.description}</p>
             <div className="flex justify-between items-center mt-4">
               <a
                 href={project.appUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#1E3A8A] hover:bg-[#1D4ED8] text-white px-4 py-2 rounded-md inline-block"
+                className="bg-[#0081A7] hover:bg-[#1D4ED8] text-white px-4 py-2 rounded-md inline-block"
               >
                 Explore
               </a>

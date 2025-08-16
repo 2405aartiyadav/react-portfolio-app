@@ -7,13 +7,18 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import ExperienceCard from "./ExperienceCard";
 import EducationCard from "./EducationCard";
+import { useMediaQuery } from "@mui/material";
+
 export default function Experience() {
+  const isMdUp = useMediaQuery("(min-width:768px)");
+
   return (
-    <div className="bg-gray-800 min-h-screen">
-       <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r text-center from-green-400 to-blue-500">
-          Work Experience
-        </h2>
-      <Timeline position="alternate">
+    <div className=" flex flex-col items-center py-16 px-8 ">
+      <h2 className="bg-[#FDFCDC] text-4xl font-extrabold text-[#F07167] bg-clip-text text-center mb-8">
+        Work Experience
+      </h2>
+
+      <Timeline position={isMdUp ? "alternate" : "right"} >
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot />
@@ -23,6 +28,7 @@ export default function Experience() {
             <ExperienceCard />
           </TimelineContent>
         </TimelineItem>
+
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot />
